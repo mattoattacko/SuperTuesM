@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 <style>
 table {
   font-family: arial, sans-serif;
@@ -8,17 +9,38 @@ table {
   width: 85%;
 }
 
+.seperator {
+  height: 50px !important;
+  box-shadow: 0 0 0 0 white !important;
+}
+
 td {
-  border: 3px solid #000000;
   text-align: center;
+}
+
+iframe {
+  border: none !important;
 }
 
 th {
   background-color: rgba(255, 162, 0, 0.9);
-  border: 3px solid #000000;
   text-align: center;
   font-size:25px;
-  padding: 3px;
+  padding: 10px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+a {
+  text-decoration: none;
+    color: rgba(0,0,0,.87) ;
+      font-family: 'Spartan', sans-serif;
+}
+
+tr {
+    box-shadow: 2px 2px 12px 4px rgba(0,0,0,0.10);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 tr:nth-child(even) {
@@ -26,22 +48,40 @@ tr:nth-child(even) {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   height: 50px;
   font-size: 40px;
-{
+  margin-bottom: 0px;
+}
+
+h5 {
+  color: rgba(0,0,0,.56);
+  margin-top: 7px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
 </style>
 </head>
-<body style="background-color:#6dc7de;">
+<body style="margin: 60px; font-family: 'Spartan', sans-serif;">
 
-<h1 size= "6" align="center">Super Tuesday</h1>
-
-<h3 align="center"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<div class="header">
+  <div >
+<h1  size= "6">Super Tuesday</h1>
+<h5>All the results...in one place! <h5>
+    </div>
+    <div>
+<h3 align=""><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="VSS58BU6ULQ76" />
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form></h3>
+</div>
+</div>
 
 
 <table align="center">
@@ -51,78 +91,84 @@ h1 {
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=AL&OFFICE=P" style="width:100%;height:768.8px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=AR&OFFICE=P" target="_blank">Arkansas</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=AR&OFFICE=P" style="width:100%;height:884.96px;"></iframe></td>
     </tr>
-    <tr>
-      <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CA&OFFICE=P" target="_blank">California</a></th>
-    </tr>
-	<tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CA&OFFICE=P" style="width:100%;height:768.8px;"></iframe></td>
-    </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CO&OFFICE=P" target="_blank">Colorado</a></th>
     </tr>
-    <tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CO&OFFICE=P" style="width:100%;height:961.8px;"></iframe></td>
+	<tr>
+      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CO&OFFICE=P" style="width:100%;height:768.8px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
+    <tr>
+      <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CA&OFFICE=P" target="_blank">California</a></th>
+    </tr>
+    <tr>
+      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=CA&OFFICE=P" style="width:100%;height:961.8px;"></iframe></td>
+    </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=ME&OFFICE=P" target="_blank">Maine</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=ME&OFFICE=P" style="width:100%;height:674.73px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=MA&OFFICE=P" target="_blank">Massachusetts</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=MA&OFFICE=P" style="width:100%;height:807.4px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=MN&OFFICE=P" target="_blank">Minnesota</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=MN&OFFICE=P" style="width:100%;height:807.4px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=NC&OFFICE=P" target="_blank">North Carolina</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=NC&OFFICE=P" style="width:100%;height:807.4px;"></iframe></td>
     </tr>
-    <tr>
-      <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=OK&OFFICE=P" target="_blank">Oklahoma</a></th>
-    </tr>
-    <tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=OK&OFFICE=P" style="width:100%;height:730.2px;"></iframe></td>
-    </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=TN&OFFICE=P" target="_blank">Tennessee</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=TN&OFFICE=P" style="width:100%;height:807.4px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=TX&OFFICE=P" target="_blank">Texas</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=TX&OFFICE=P" style="width:100%;height:846px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=UT&OFFICE=P" target="_blank">Utah</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=UT&OFFICE=P" style="width:100%;height:807.4px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=VT&OFFICE=P" target="_blank">Vermont</a></th>
     </tr>
     <tr>
       <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=VT&OFFICE=P" style="width:100%;height:691.6px;"></iframe></td>
     </tr>
+    <tr class="seperator"></tr>
     <tr>
       <th><a href="https://interactives.ap.org/primary-elections-2020-03-03/?site=thenewyorker&STATE=VA&OFFICE=P" target="_blank">Virginia</a></th>
     </tr>
